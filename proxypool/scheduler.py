@@ -54,7 +54,7 @@ class Scheduler:
         tester = Tester()
         loop = 0
         while True:
-            logger.debug(f"tester loop {loop} start...")
+            logger.debug(f"tester loop {loop}  fuck ---- start...")
             logger.info(f"connect:host:{REDIS_HOST}:port:{REDIS_PORT}:password:{REDIS_PASSWORD}:db:{REDIS_DB}}")
             tester.run()
             loop += 1
