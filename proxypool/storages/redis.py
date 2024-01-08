@@ -43,7 +43,7 @@ class RedisClient(object):
         :param password: redis password
         :param connection_string: redis connection_string
         """
-        logger.info(f"connect:host:{host}:port:{port}:password:{password}:db:{db}")
+        print(f"connect:host:{host}:port:{port}:password:{password}:db:{db}")
         # if set connection_string, just use it
         if connection_string:
             self.db = redis.StrictRedis.from_url(
